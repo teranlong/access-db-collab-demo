@@ -43,5 +43,27 @@ Begin Form
             Name ="subfrmReport"
             SourceObject ="qryInventoryReport"
         End
+        Begin CommandButton
+            OverlapFlags =85
+            Left =360
+            Top =7200
+            Width =2000
+            Height =450
+            TabIndex =1
+            Name ="cmdExport"
+            Caption ="Export to Excel"
+            OnClick ="[Event Procedure]"
+        End
+        Begin CommandButton
+            OverlapFlags =85
+            Left =2700
+            Top =7200
+            Width =2000
+            Height =450
+            TabIndex =2
+            Name ="cmdPrint"
+            Caption ="Print Report"
+            OnClick ="[Event Procedure]"
+        End
     End
 End

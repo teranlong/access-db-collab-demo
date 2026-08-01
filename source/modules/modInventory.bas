@@ -14,3 +14,8 @@ Public Function GetStockStatus(ByVal intQty As Integer) As String
         Case Else:    GetStockStatus = "OVERSTOCKED"
     End Select
 End Function
+Public Sub ExportToExcel(ByVal strQueryName As String)
+    DoCmd.TransferSpreadsheet acExport, acSpreadsheetTypeExcel12Xml, _
+        strQueryName, CurrentProject.Path & "\" & strQueryName & ".xlsx", True
+    MsgBox "Exported to " & CurrentProject.Path & "\" & strQueryName & ".xlsx"
+End Sub
