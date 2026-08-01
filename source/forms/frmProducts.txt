@@ -146,5 +146,26 @@ Begin Form
             Caption ="Delete"
             OnClick ="[Event Procedure]"
         End
+        Begin TextBox
+            OverlapFlags =85
+            IMESentenceMode =3
+            Left =5500
+            Top =1000
+            Width =3500
+            Height =360
+            TabIndex =6
+            Name ="txtSearch"
+            OnChange ="[Event Procedure]"
+            Begin
+                Begin Label
+                    Left =5500
+                    Top =760
+                    Width =2000
+                    Height =240
+                    Name ="lblSearch"
+                    Caption ="Search Products:"
+                End
+            End
+        End
     End
 End
