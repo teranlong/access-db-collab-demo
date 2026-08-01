@@ -1,0 +1,39 @@
+# =========================================================
+# Access Database Repo - .gitignore
+# =========================================================
+# Place this in the root of your Access database repo.
+
+# =========================================================
+# ACCESS BINARY & LOCK FILES
+# =========================================================
+*.laccdb
+*.ldb
+*.accdb.bak
+
+# =========================================================
+# The actual .accdb is personal/local — source files are truth
+# Uncomment the next line if you want to EXCLUDE the .accdb from Git
+# (recommended for team collaboration — each person builds locally)
+# =========================================================
+# *.accdb
+
+# =========================================================
+# WORKFLOW TOOL LOGS
+# =========================================================
+access-db-git-workflow/logs/
+
+# =========================================================
+# OS / IDE
+# =========================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.suo
+*.user
+
+# =========================================================
+# TEMP FILES
+# =========================================================
+~$*
+*.tmp

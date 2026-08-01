@@ -1,0 +1,47 @@
+Version =21
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    DefaultView =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =12000
+    ItemSuffix =15
+    Left =200
+    Top =200
+    Right =12200
+    Bottom =8000
+    DatasheetGridlinesColor =14806254
+    RecSrcDt = Begin
+        0xaabb006482cce440
+    End
+    RecordSource ="qryInventoryReport"
+    Caption ="Inventory Report"
+    FilterOnLoad =0
+    Begin
+        Begin Label
+            OverlapFlags =85
+            Left =360
+            Top =200
+            Width =5000
+            Height =500
+            FontSize =16
+            FontWeight =700
+            ForeColor =4210752
+            Name ="lblTitle"
+            Caption ="Inventory Report"
+        End
+        Begin SubForm
+            OverlapFlags =85
+            Left =360
+            Top =900
+            Width =11000
+            Height =6000
+            TabIndex =0
+            Name ="subfrmReport"
+            SourceObject ="qryInventoryReport"
+        End
+    End
+End

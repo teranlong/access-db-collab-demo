@@ -1,0 +1,32 @@
+{
+  "$schema": "./config-schema.json",
+  "comment": "Configure these paths for your project. All paths are relative to this config file unless absolute.",
+
+  "accessDbPath": "..\\MyDatabase.accdb",
+  "vcsExportFolder": "..\\source",
+  "gitRepoRoot": "..",
+  "branch": "main",
+  "remoteName": "origin",
+
+  "msAccessVcs": {
+    "addinPath": "",
+    "comment": "Leave empty to use default MSAccessVCS installation"
+  },
+
+  "noiseFilter": {
+    "stripPrinterSettings": true,
+    "stripNameMap": true,
+    "stripChecksums": true,
+    "stripGuids": false,
+    "stripSummaryInfo": true,
+    "stripDatasheetFont": true,
+    "customPatterns": []
+  },
+
+  "git": {
+    "autoStash": true,
+    "pullRebase": true,
+    "commitMessageTemplate": "Access DB: {timestamp} - {user}",
+    "pushAfterCommit": true
+  }
+}

@@ -1,0 +1,35 @@
+# =========================================================
+# Access Database Git Workflow - .gitattributes
+# =========================================================
+# Place this file in the root of your Access database repo.
+# It ensures consistent line endings for VCS exports and
+# marks binary files so Git never tries to diff/merge them.
+
+# =========================================================
+# TEXT FILES (VCS exports) - normalize line endings
+# =========================================================
+*.bas        text eol=crlf diff
+*.cls        text eol=crlf diff
+*.frm        text eol=crlf diff
+*.txt        text eol=crlf diff
+*.sql        text eol=crlf diff
+*.json       text eol=crlf diff
+*.xml        text eol=crlf diff
+*.md         text eol=crlf diff
+
+# =========================================================
+# BINARY FILES - never diff or merge
+# =========================================================
+*.accdb      binary
+*.accde      binary
+*.accdt      binary
+*.mdb        binary
+*.mde        binary
+*.laccdb     binary
+*.mdw        binary
+
+# =========================================================
+# BACKUP / TEMP - ignore in diffs
+# =========================================================
+*.accdb.bak  binary
+*.ldb        binary

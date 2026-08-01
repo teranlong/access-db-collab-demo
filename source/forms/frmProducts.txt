@@ -1,0 +1,150 @@
+Version =21
+VersionRequired =20
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridX =24
+    GridY =24
+    Width =9360
+    ItemSuffix =30
+    Left =500
+    Top =500
+    Right =9860
+    Bottom =7000
+    DatasheetGridlinesColor =14806254
+    RecSrcDt = Begin
+        0x73e2b06482cce440
+    End
+    RecordSource ="tblProducts"
+    Caption ="Product Entry"
+    FilterOnLoad =0
+    Begin
+        Begin Label
+            OverlapFlags =85
+            Left =360
+            Top =200
+            Width =4000
+            Height =500
+            FontSize =16
+            FontWeight =700
+            ForeColor =4210752
+            Name ="lblTitle"
+            Caption ="Product Entry"
+        End
+        Begin TextBox
+            OverlapFlags =85
+            IMESentenceMode =3
+            Left =360
+            Top =1000
+            Width =4500
+            Height =360
+            TabIndex =0
+            Name ="txtProductName"
+            ControlSource ="ProductName"
+            Begin
+                Begin Label
+                    Left =360
+                    Top =760
+                    Width =2000
+                    Height =240
+                    Name ="lblProductName"
+                    Caption ="Product Name:"
+                End
+            End
+        End
+        Begin TextBox
+            OverlapFlags =85
+            IMESentenceMode =3
+            Left =360
+            Top =1800
+            Width =2500
+            Height =360
+            TabIndex =1
+            Name ="txtPrice"
+            ControlSource ="UnitPrice"
+            Format ="Currency"
+            Begin
+                Begin Label
+                    Left =360
+                    Top =1560
+                    Width =2000
+                    Height =240
+                    Name ="lblPrice"
+                    Caption ="Unit Price:"
+                End
+            End
+        End
+        Begin TextBox
+            OverlapFlags =85
+            IMESentenceMode =3
+            Left =360
+            Top =2600
+            Width =2500
+            Height =360
+            TabIndex =2
+            Name ="txtQuantity"
+            ControlSource ="QuantityInStock"
+            Begin
+                Begin Label
+                    Left =360
+                    Top =2360
+                    Width =2000
+                    Height =240
+                    Name ="lblQuantity"
+                    Caption ="Qty In Stock:"
+                End
+            End
+        End
+        Begin ComboBox
+            OverlapFlags =85
+            Left =360
+            Top =3400
+            Width =4500
+            Height =360
+            TabIndex =3
+            Name ="cboCategory"
+            ControlSource ="CategoryID"
+            RowSourceType ="Table/Query"
+            RowSource ="SELECT CategoryID, CategoryName FROM tblCategories ORDER BY CategoryName"
+            ColumnCount =2
+            ColumnWidths ="0;3000"
+            BoundColumn =1
+            Begin
+                Begin Label
+                    Left =360
+                    Top =3160
+                    Width =2000
+                    Height =240
+                    Name ="lblCategory"
+                    Caption ="Category:"
+                End
+            End
+        End
+        Begin CommandButton
+            OverlapFlags =85
+            Left =360
+            Top =4200
+            Width =2000
+            Height =450
+            TabIndex =4
+            Name ="cmdSave"
+            Caption ="Save"
+            OnClick ="[Event Procedure]"
+        End
+        Begin CommandButton
+            OverlapFlags =85
+            Left =2700
+            Top =4200
+            Width =2000
+            Height =450
+            TabIndex =5
+            Name ="cmdDelete"
+            Caption ="Delete"
+            OnClick ="[Event Procedure]"
+        End
+    End
+End
